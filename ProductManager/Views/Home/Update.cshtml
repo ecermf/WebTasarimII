@@ -1,0 +1,24 @@
+﻿@model ProductManager.Models.Entity.Product
+<h1>Güncelleme</h1>
+<form asp-controller="Home" asp-action="Update">
+    <div class="bg-info text-light" asp-validation-summary="All">
+    </div>
+    <input type="hidden" asp-for="Id"/>
+    <div class="mb-3">
+        <label asp-for="Code" class="form-label"></label>
+        <input class="form-control" asp-for="Code">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input class="form-control" asp-for="Price">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Stok" class="form-label"></label>
+        <input class="form-control" asp-for="Stok">
+    </div>
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+</form>
